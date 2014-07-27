@@ -1,0 +1,3 @@
+(defn main ()
+  (let (l (list 10 20 30))
+    (+ (nth l 1) (nth l 2))))

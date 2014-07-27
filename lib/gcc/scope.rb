@@ -12,7 +12,7 @@ module GCC
         return value, i
       end
 
-      raise "no such variable in scope: #{key.inspect}" unless @parent
+      return nil unless @parent
       @parent.lookup key, i+1
     end
   end

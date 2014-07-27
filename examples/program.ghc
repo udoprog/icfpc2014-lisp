@@ -1,8 +1,8 @@
 (defn hello (foo)
-  (if (< 42 foo)
+  (if (or (< 42 foo) (> 42 foo) (= 42 foo))
     (let (f 10)
       (+ f foo))
     20))
 
-(defentry ()
-  (+ 10 (hello 33)))
+(defn main ()
+  (+ 10 (hello 42)))
